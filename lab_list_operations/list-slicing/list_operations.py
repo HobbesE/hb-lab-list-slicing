@@ -146,8 +146,10 @@ def replace_third_and_last(input_list):
     True
 
     """
+    input_list[2] = 37
+    input_list[-1] = 37
 
-    pass
+    return None
 
 
 def replace_middle(input_list):
@@ -165,8 +167,10 @@ def replace_middle(input_list):
     True
 
     """
+    input_list[2:-2] = [42, 37]
 
-    pass
+    return None
+
 
 
 def delete_third_and_seventh(input_list):
@@ -181,7 +185,12 @@ def delete_third_and_seventh(input_list):
 
     """
 
-    pass
+    #input_list[2:6:4] = []
+    input_list[2:3] = []
+    input_list[5:6] = []
+    
+
+    return None
 
 
 def delete_middle(input_list):
@@ -197,8 +206,9 @@ def delete_middle(input_list):
     True
 
     """
+    input_list[2:-2] = []
 
-    pass
+    return None
 
 
 # This is the part were we actually run the doctests.
